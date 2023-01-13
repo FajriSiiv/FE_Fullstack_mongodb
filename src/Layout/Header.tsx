@@ -8,7 +8,7 @@ export default function Header() {
   const logout = () => {
     try {
       navigate("/");
-      axios.delete(import.meta.env.VITE_APP_URL + "/logout");
+      axios.delete("https://backend-mongodb-test.vercel.app/logout");
     } catch (error) {
       console.log(error);
     }

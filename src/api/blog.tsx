@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiUrl = axios.create({
-  baseURL: import.meta.env.VITE_APP_URL,
+  baseURL: "https://backend-mongodb-test.vercel.app",
   // PENTING!!!! HARUS ADA SAAT PEMANGGILAN LEWAT REACT-QUERY
   withCredentials: true,
 });
